@@ -68,7 +68,7 @@ object StreamRankWindow extends Serializable {
 
     userRank
       .writeStream
-      .queryName("stream_ranking")
+      .queryName("stream_rank")
       .format("memory")
       .outputMode("update")
       .start()
